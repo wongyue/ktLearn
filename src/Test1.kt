@@ -1,5 +1,4 @@
 import java.util.*
-import javax.xml.bind.Element
 
 
 fun maxOf(a: Int, b: Int = 10): Int? {
@@ -57,7 +56,8 @@ fun ex() {
 }
 
 fun main() {
-    Derived.create()
+    val v = SAM { input -> input % 2 == 0 }
+    println(" is 7 Even? - ${v.accept(7)}")
 }
 
 class C {

@@ -25,7 +25,7 @@ class Derived(
         println("Initializing Derived")
     }
 
-    override val size: Int = (lastName.length + super.size).also { print("Initializing size: $it") }
+    override val size: Int = (lastName.length + super.size).also { println("Initializing size: $it") }
     override fun draw() {
         super<Base>.draw()
         super<Ts>.draw()
