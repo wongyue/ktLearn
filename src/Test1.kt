@@ -56,8 +56,7 @@ fun ex() {
 }
 
 fun main() {
-    val v = SAM { input -> input % 2 == 0 }
-    println(" is 7 Even? - ${v.accept(7)}")
+    printAllValues<RGB>()
 }
 
 class C {
